@@ -386,7 +386,7 @@ gui, add, checkbox, y345 x100 gclockwise, Clockwise
 gui, add, checkbox, x5 y375 grope, Rope
 gui, add, checkbox, x100 y375 gdouble, Double
 gui, add, checkbox, x65 y405 galarms checked, Alarms
-Gui, add, text, x55 y435 c0000A0, RistoniaMS
+Gui, add, text, x55 y435 c0000A0, Bama
 IniRead, LeftX, Map.ini, MapPos, LeftX
 Iniread, RightX, Map.ini, MapPos, RightX
 Iniread, TopY, Map.ini, MapPos, TopY
