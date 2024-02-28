@@ -1,2 +1,2 @@
 # MushroomMacro
-Macro-damo
+AHK files edited based on "damomacro.ahk".
