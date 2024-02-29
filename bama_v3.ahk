@@ -699,6 +699,13 @@ atk(){
 	guicontrol, , Pause1 , Pause
 	guicontrol, , Start1 , Started
 	pause,Off
+	; epicAdventure()
+	; burningSoulBlade()
+	; weaponAura()
+	; cryValhala()
+	; decentAvancedBlessing()
+	; goddess()
+	; spider()
 	worldReaver := true
 	beamBlade := true
 	risingRage := true
@@ -716,7 +723,38 @@ atk(){
 					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
 					sleep %jump%
 				}
-
+								if(swordIllusion) {
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					swordIllusion := false
+					SetTimer, swordIllusion, -30000
+				}
+				else if (beamBlade) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					beamBlade := false
+					SetTimer, beamBlade, -7000
+				}
+				else if(worldReaver) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					worldReaver := false
+					SetTimer, worldReaver, -25000
+				}
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 1)
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 0)
 				sleep 490
@@ -745,7 +783,38 @@ atk(){
 					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
 					sleep %jump%
 				}
-
+								if(swordIllusion) {
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					swordIllusion := false
+					SetTimer, swordIllusion, -30000
+				}
+				else if (beamBlade) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					beamBlade := false
+					SetTimer, beamBlade, -7000
+				}
+				else if(worldReaver) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					worldReaver := false
+					SetTimer, worldReaver, -25000
+				}
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 1)
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 0)
 				sleep 490
@@ -815,7 +884,38 @@ atk(){
 					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
 					sleep %jump%
 				}
-
+								if(swordIllusion) {
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					swordIllusion := false
+					SetTimer, swordIllusion, -30000
+				}
+				else if (beamBlade) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					beamBlade := false
+					SetTimer, beamBlade, -7000
+				}
+				else if(worldReaver) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					worldReaver := false
+					SetTimer, worldReaver, -25000
+				}
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 1)
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 0)
 				sleep 490
@@ -857,6 +957,98 @@ atk(){
 					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
 					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
 					sleep %jump%
+				}
+				if(swordIllusion) {
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					swordIllusion := false
+					SetTimer, swordIllusion, -30000
+				}
+				else if (beamBlade) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					beamBlade := false
+					SetTimer, beamBlade, -7000
+				}
+				else if(worldReaver) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					worldReaver := false
+					SetTimer, worldReaver, -25000
+				}
+				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 1)
+				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 0)
+				sleep 490
+				ImageSearch,vX,vY,1,1,1920,1080, *1 me.png
+			}
+			if(risingRage) {
+				AHI.Instance.SendKeyEvent(HID, GetKeySC("Right"), 0)
+				sleep 200
+				loop 3 {
+					random, ran, 66,95
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("Shift"), 1)
+					sleep %ran%
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("Shift"), 0)
+				}
+				sleep 500
+				risingRage := false
+				SetTimer, risingRage , -10000
+			}
+			ImageSearch,vX,vY,1,1,1920,1080, *1 me.png
+			while(vX < RightX && Errorlevel = 0) {
+				AHI.Instance.SendKeyEvent(HID, GetKeySC("Right"), 1)
+				sleep 100
+				loop 3 {
+					random, jump, %jump1%, %jump2%
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+					sleep %jump%
+				}
+								if(swordIllusion) {
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					swordIllusion := false
+					SetTimer, swordIllusion, -30000
+				}
+				else if (beamBlade) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					beamBlade := false
+					SetTimer, beamBlade, -7000
+				}
+				else if(worldReaver) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					worldReaver := false
+					SetTimer, worldReaver, -25000
 				}
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 1)
 				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 0)
@@ -904,6 +1096,65 @@ atk(){
 					ImageSearch,vX,vY,1,1,1920,1080, *1 me.png
 				}
 				sleep 100
+			}
+			if(erdaShower) {
+				sleep 300
+				loop 4 {
+					random, ran, 80,120
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("i"), 1)
+					sleep %ran%
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("i"), 0)
+				}
+				sleep 500
+				SetTimer, erdaShower, -60000
+				erdaShower := false
+			}
+			ImageSearch,vX,vY,1,1,1920,1080, *1 me.png
+			while(vX > LeftX && Errorlevel = 0) {
+				AHI.Instance.SendKeyEvent(HID, GetKeySC("Left"), 1)
+				sleep 100
+				loop 3 {
+					random, jump, %jump1%, %jump2%
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+					sleep %jump%
+				}
+								if(swordIllusion) {
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					swordIllusion := false
+					SetTimer, swordIllusion, -30000
+				}
+				else if (beamBlade) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					beamBlade := false
+					SetTimer, beamBlade, -7000
+				}
+				else if(worldReaver) {
+					if(double) {
+						sleep 100
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 1)
+						AHI.Instance.SendKeyEvent(HID, GetKeySC("Space"), 0)
+						sleep 100
+					}
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 1)
+					AHI.Instance.SendKeyEvent(HID, GetKeySC("8"), 0)
+					sleep 100
+					worldReaver := false
+					SetTimer, worldReaver, -25000
+				}
+				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 1)
+				AHI.Instance.SendKeyEvent(HID, GetKeySC("x"), 0)
+				sleep 490
+				ImageSearch,vX,vY,1,1,1920,1080, *1 me.png
 			}
 			AHI.Instance.SendKeyEvent(HID, GetKeySC("Left"), 0)
 			sleep 200
